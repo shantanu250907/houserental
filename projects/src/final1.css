@@ -1,0 +1,324 @@
+/* 
+.a {
+    border-radius: 10px;
+    background: #000;
+    margin-right:2px;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.b {
+    text-shadow: 0 1px 3px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+
+}
+.c {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px white;
+}
+img:hover {
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    margin-top: 10px;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+}
+.text-overlay {
+    position: absolute;
+    top: 17rem;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 16rem;
+    font-style: italic;
+    text-shadow: 0 4px 8px;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 22.5rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: rgb(105, 175, 175);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 25rem;
+    line-height: 80px;
+}
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48vh;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin: 0;
+}
+
+.card {
+    background: rgb(26, 24, 24);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right:10px;
+
+}
+
+.card1 {
+    background: rgb(195, 182, 182);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+
+}
+
+.card:hover {
+    transform: translateY(-110px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card1:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.card img {
+    width: 90%;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 19px;
+    border-radius: 8px;
+}
+
+.card1 img {
+    width: 90%;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 8px;
+}
+
+.card-content1 {
+    padding: 8px;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+    color: skyblue;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: rgb(115, 172, 172);
+    margin-bottom: 16px;
+}
+
+.card-title1 {
+    font-size: 2.2rem;
+    margin: 0px 0px 10px;
+    color: black;
+}
+
+.card-text1 {
+    font-size: 1rem;
+    color: black(115, 172, 172);
+    margin-bottom: 10px;
+    text-decoration-line: line-through;
+}
+
+.card-text2 {
+    font-size: 1.5rem;
+    color: black(115, 172, 172);
+    margin-bottom: 10px;
+
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.d {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    padding: 15px;
+    border-radius: 16px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 1px 1.5px;
+    font-size: 30px;
+    color: white;
+    margin-right: 2PX;
+    margin-left: 2px;
+}
+
+.d2 {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(6, 6, 6);
+    ;
+    color: white;
+    padding: 15px;
+    border-radius: 16px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 1px 1.5px;
+    font-size: 30px;
+    color: white;
+}
+
+.d1 {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(6, 6, 6);
+    ;
+    color: white;
+    padding: 15px;
+    border-radius: 16px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 1px 1.5px;
+    font-size: 30px;
+}
+
+.e {
+    height: 220px;
+    width: 400px;
+}
+
+.grid-container {
+    display: flex;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    background-color: rgb(211, 226, 232);
+
+}
+
+.grid-container div {
+    background-color: rgb(255, 253, 253);
+    text-align: right;
+    border-radius: 10px;
+    padding: 0px 0px;
+}
+
+.grid-container1 {
+    display: flex;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    background-color: rgb(211, 226, 232);
+    margin-top: 5px;
+}
+
+.grid-container1 div {
+    background-color: rgb(255, 253, 253);
+    text-align: right;
+}
+
+.A1 {
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: black;
+}
+
+.s {
+    background-color: rgb(195, 182, 182);
+    border-radius: 8px;
+    transform: translateY(-8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+}
+
+.s1 {
+    height: 300;
+    width: 400;
+    margin: 12px;
+    border-radius: 8px;
+}
+
+.n {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.y {
+    font-size: 2rem;
+}
+.aa{
+    margin-top: 80px;
+    margin-left: 5px;
+}
+.aa1{
+    margin-top: 20px;
+    margin-left: 5px;
+} */
+
+.abc{
+    color: aqua;
+}
