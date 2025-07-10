@@ -18,7 +18,7 @@ const Gallery = () => {
                         <table width="85%" cellpadding="15" align="center">
                             <tr>
                                 <td className="b">
-                                    Black Oasis
+                                    Black Mamba
                                 </td>
                                 <td >
                                     &nbsp;
