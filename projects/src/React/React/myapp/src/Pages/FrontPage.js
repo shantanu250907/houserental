@@ -63,8 +63,6 @@ const FrontPage = () => {
       <div className="feature">
         <FaStar className="feature-icon" />
         <h5>Highlighted features or benefits</h5>
-        <h1>Sahil Sonar </h1>
-        <h1>Shantanu Sonawane</h1>
         <p>
         Highlight premium or top-rated homes
         </p>
