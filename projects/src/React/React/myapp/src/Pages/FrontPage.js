@@ -35,7 +35,7 @@ const FrontPage = () => {
         />
       </video>
       <div className="overlay">
-      <center><h1 style={{ fontFamily:'Poppins', color: 'White',fontSize:'3.5rem'}}>Find Your Future Dream Home</h1></center>
+      <center><h1 style={{ fontFamily:'Arrial', color: 'White',fontSize:'3.5rem'}}>Find Your Future Dream Home</h1></center>
       <br></br>
       <div class="action-buttons">
         <button class="btn buy-btn" style={{ color: "white" }}>Buy</button>
@@ -58,11 +58,6 @@ const FrontPage = () => {
         </div>
       </center>
       </div>
-
-
-
-
-
       <div className="features-container">
         <div className="feature">
           <FaHome className="feature-icon" />
