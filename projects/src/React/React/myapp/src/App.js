@@ -1,13 +1,14 @@
  import React from "react";
  import { BrowserRouter,Routes,Route } from "react-router-dom";
  import TopNavbar from "./Pages/TopNavbar";
-// import Test from './Test2.js';
 // import Demo from './Demo.js';
 import About from './About.js';
 import Owner from "./Pages/Owner.js";
 import Tenant from "./Pages/Tenant.js";
 import PropertyListing from "./Pages/PropertyListing.js";
 import FrontPage from "./Pages/FrontPage.js";
+import Test2 from "./Test2.js";
+import Home from "./Pages/Home.js";
 
 
 
@@ -15,7 +16,6 @@ import FrontPage from "./Pages/FrontPage.js";
    return (
      <>
      
-
        
  <BrowserRouter>
         <TopNavbar/>
@@ -28,6 +28,7 @@ import FrontPage from "./Pages/FrontPage.js";
           <Route path='/Tenant' element={<Tenant/>}/>
           <Route path='/PropertyListing' element={<PropertyListing/>}/>
           <Route path='/FrontPage' element={<FrontPage/>}/>
+           <Route path='/Home' element={<Home/>}/>
           
  
  
