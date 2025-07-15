@@ -54,6 +54,7 @@ function Tenant(){
   
     return (
       <>
+      <div className='container'>
       <h2 className="text-center my-4">Sign Up</h2>
   <Form onSubmit={handleSubmit}></Form>
       <Form onSubmit={handleSubmit}>
@@ -67,7 +68,7 @@ function Tenant(){
             value={formData.fullName}
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">Full Name.</Form.Text>
+         
         </Form.Group>
   
         {/* Email */}
@@ -95,7 +96,7 @@ function Tenant(){
             value={formData.address}
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">Enter the proper address.</Form.Text>
+          
         </Form.Group>
   
         {/* Contact & City */}
@@ -198,6 +199,7 @@ function Tenant(){
           </Alert>
         )}
       </Form>
+      </div>
       </>   
   );
 }

@@ -40,15 +40,3 @@ import Home from "./Pages/Home.js";
 
 export default App;
 
-// import React from "react";
-// import Demo2 from "../src/ReactPractice/Demo2";
-
-// function App() {
-//   return (
-//     <>
-//      <Demo2/> 
-//      </>
-//   );
-// }
-
-// export default App;

@@ -60,12 +60,36 @@
 
 .H {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   color: 'GrayText';
-  margin-top: 20px;
+  margin-top: 10px;
   color: grey;
-  margin-left:900px;
+  margin-left:680px;
 }
+
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #FF4F5A;
+  color: white;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #FF4F5A;
+  border-color: #FF4F5A;
+}
+.btn-group {
+  gap: 10px;
+}
+
 
 .dropdown-menu {
   width:150px;
