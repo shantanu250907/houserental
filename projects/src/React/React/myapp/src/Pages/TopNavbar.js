@@ -7,19 +7,15 @@ import { NavLink, Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import broker from "./nb_logo_trans-min.png";
 import './TopNavbar.css';
-import LoginModal from "./LoginModal"; 
+import LoginModal from "./LoginModal";
 
 function TopNavbar() {
-  const [showLogin, setShowLogin] = useState(false); 
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }}>
-        <img
-          src={broker}
-          alt="logo-left"
-          style={{ width: '250px', height: '70px', marginRight: '10px' }}
-        />
+        <img src={broker} alt="logo-left" style={{ width: '250px', height: '70px', marginRight: '10px', marginLeft: '10px' }} />
         <div className="H">
           <Link to='/Owner'>
             <button type="button" className="btn btn-success" style={{ width: '100px', height: 30 }}>For Owner</button>
@@ -27,18 +23,19 @@ function TopNavbar() {
           <h6 style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)}>Signup</h6>
           <h6 style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)}>Login</h6>
           <h6>Menu</h6>
+          <div className="dropdown">
+            <button className="menu-toggle">☰</button>
+            <ul className="dropdown-menu small-menu">
+              <li><Link to="/">Post Property</Link></li>
+              <li><Link to="/">Gallery</Link></li>
+              <li><Link to="/">History</Link></li>
+              <li><Link to="/">Feedback</Link></li>
+              <li><Link to="/">About Us</Link></li>
+            </ul>
+          </div>
         </div>
 
-        <div className="dropdown">
-          <button className="menu-toggle">☰</button>
-          <ul className="dropdown-menu small-menu">
-            <li><Link to="/">Post Property</Link></li>
-            <li><Link to="/">Gallery</Link></li>
-            <li><Link to="/">History</Link></li>
-            <li><Link to="/">Feedback</Link></li>
-            <li><Link to="/">About Us</Link></li>
-          </ul>
-        </div>
+
       </div>
 
       {/* Bottom Navbar */}

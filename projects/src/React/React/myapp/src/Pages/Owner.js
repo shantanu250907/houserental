@@ -49,12 +49,12 @@ function Tenant(){
     const handleSubmit = (e) => {
       e.preventDefault();
       setSubmitted(true);
-      // You can also send formData to backend here
+      
     };
   
     return (
       <>
-      <h2 className="text-center my-4">Owner Sign Up Form</h2>
+      <h2 className="text-center my-4">Sign Up</h2>
   <Form onSubmit={handleSubmit}></Form>
       <Form onSubmit={handleSubmit}>
         {/* Full Name */}
