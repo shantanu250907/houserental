@@ -9,6 +9,7 @@ import PropertyListing from "./Pages/PropertyListing.js";
 import FrontPage from "./Pages/FrontPage.js";
 import Test2 from "./Test2.js";
 import Home from "./Pages/Home.js";
+import Search from "./Pages/Search.js";
 
 
 
@@ -16,7 +17,6 @@ import Home from "./Pages/Home.js";
    return (
      <>
      
-       
  <BrowserRouter>
         <TopNavbar/>
         
@@ -28,7 +28,8 @@ import Home from "./Pages/Home.js";
           <Route path='/Tenant' element={<Tenant/>}/>
           <Route path='/PropertyListing' element={<PropertyListing/>}/>
           <Route path='/FrontPage' element={<FrontPage/>}/>
-           <Route path='/Home' element={<Home/>}/>
+          <Route path='/Home' element={<Home/>}/>
+          <Route path='/Search' element={<Search/>}/>
           
  
  

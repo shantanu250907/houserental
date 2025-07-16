@@ -9,12 +9,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import vid from './vid.mp4';
+import {Link} from "react-router-dom";
+
 
 
 const FrontPage = () => {
 
   return (
     <>
+      
       {/* Background Video */}
       <video
         autoPlay
@@ -35,29 +38,55 @@ const FrontPage = () => {
         />
       </video>
       <div className="overlay">
-      <center><h1 style={{ fontFamily:'Arrial', color: 'White',fontSize:'3.5rem'}}>Find Your Future Dream Home</h1></center>
-      <br></br>
-      <div class="action-buttons">
-        <button class="btn buy-btn" style={{ color: "white" }}>Buy</button>
-        <button class="btn rent-btn" style={{ color: "white" }}>Rent</button>
+        <center><h1 style={{ fontFamily: 'Arrial', color: 'White', fontSize: '3.5rem' }}>Find Your Future Dream Home</h1></center>
+        <br></br>
+        <div class="action-buttons">
+          <button class="btn buy-btn" style={{ color: "white" }}>Buy</button>
+          <button class="btn rent-btn" style={{ color: "white" }}>Rent</button>
+        </div>
+        <center>
+          <div class="search-container">
+            <div class="dropdown-box">
+              <select>
+                <option>Nashik</option>
+                <option>Mumbai</option>
+                <option>Dhule</option>
+              </select>
+            </div>
+
+            <input type="text" className="q" placeholder="Search upto 3 localities or landmarks" style={{ width: 500 }} />
+            <Link to='/Search'>
+            <button class="search-btn">
+              <i class="search"></i><img src="	https://assets.nobroker.in/nb-new/public/Home/searchIcon.svg" width={20} /> Search
+            </button>
+            </Link>
+          </div>
+        </center>
       </div>
-      <center>
-        <div class="search-container">
-          <div class="dropdown-box">
-            <select>
+      {/* <Container className="hero-content position-absolute top-50 start-50 translate-middle text-center text-white px-3">
+        <h1 className="display-4 fw-bold mb-4">Find Your Future Dream Home</h1>
+        <div className="d-flex justify-content-center mb-3">
+          <button className="btn-hero me-2">Buy</button>
+          <button className="btn-outline-hero">Rent</button>
+        </div>
+
+        {/* Cities + Search Bar */}
+        {/* <Row className="align-items-center justify-content-center mt-3">
+
+          <Col xs="auto" className="d-flex flex-nowrap align-items-center gap-2 mt-2">
+            <select style={{ maxWidth: 150 }}>
               <option>Nashik</option>
               <option>Mumbai</option>
               <option>Dhule</option>
             </select>
-          </div>
 
-          <input type="text" placeholder="Search upto 3 localities or landmarks" style={{ width: 500 }} />
-          <button class="search-btn">
-            <i class="search"></i><img src="	https://assets.nobroker.in/nb-new/public/Home/searchIcon.svg" width={20} /> Search
-          </button>
-        </div>
-      </center>
-      </div>
+            <inputGroup className="glass-search d-flex align-items-center p-1 rounded">
+              <formControl style={{ maxWidth: 150 }} placeholder="Locality" />
+              <button variant="dark">🔍 Search</button>
+            </inputGroup>
+          </Col>
+        </Row>
+      </Container> */} 
       <div className="features-container">
         <div className="feature">
           <FaHome className="feature-icon" />
