@@ -12,6 +12,8 @@ import Home from "./Pages/Home.js";
 import Search from "./Pages/Search.js";
 import sell from './Pages/Selling.js';
 import Selling from "./Pages/Selling.js";
+import About  from "./About.js";
+import Feedback from "./Feedback.js"
 
 
  function App() {
@@ -32,6 +34,8 @@ import Selling from "./Pages/Selling.js";
           <Route path='/Home' element={<Home/>}/>
           <Route path='/Search' element={<Search/>}/>
           <Route path='/sell' element={<Selling/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/feedback' element={<Feedback/>}/>
  
  
          </Routes>
