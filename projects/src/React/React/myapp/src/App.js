@@ -10,7 +10,8 @@ import FrontPage from "./Pages/FrontPage.js";
 import Test2 from "./Test2.js";
 import Home from "./Pages/Home.js";
 import Search from "./Pages/Search.js";
-
+import sell from './Pages/Selling.js';
+import Selling from "./Pages/Selling.js";
 
 
  function App() {
@@ -30,7 +31,7 @@ import Search from "./Pages/Search.js";
           <Route path='/FrontPage' element={<FrontPage/>}/>
           <Route path='/Home' element={<Home/>}/>
           <Route path='/Search' element={<Search/>}/>
-          
+          <Route path='/sell' element={<Selling/>}/>
  
  
          </Routes>

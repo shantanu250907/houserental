@@ -1,13 +1,12 @@
 .body{
     background-color: #F2F2F2;
 }
-.btn btn-outline-primary{
-    width: 100px;
-    
-}
+
 .btn-check{
     width:100px;
 }
-.btn-group{
-    width:350px;
+.form-check-input:hover{
+    outline: 1px solid black;
+    cursor: pointer;
+    transition: outline 0.1s ease;
 }

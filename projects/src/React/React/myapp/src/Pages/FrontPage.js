@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 // import Hand from "./Hand.jpg";
 // import ForRent from "../Assets/Images/ForRent.jpg"
@@ -9,15 +9,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import vid from './vid.mp4';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
 const FrontPage = () => {
+  const [selectedBHK, setSelectedBHK] = useState('');
+  
+      const handleSelect = (type) => {
+          setSelectedBHK(type);
+      };
 
   return (
     <>
-      
+
       {/* Background Video */}
       <video
         autoPlay
@@ -38,55 +43,80 @@ const FrontPage = () => {
         />
       </video>
       <div className="overlay">
-        <center><h1 style={{ fontFamily: 'Arrial', color: 'White', fontSize: '3.5rem' }}>Find Your Future Dream Home</h1></center>
+        <center><h1 style={{ fontFamily: 'Arrial', color: 'White', fontSize: '3.5rem',textShadow:'0 8px 8px black' }} className="ab">Find Your Future Dream Home</h1></center>
         <br></br>
         <div class="action-buttons">
           <button class="btn buy-btn" style={{ color: "white" }}>Buy</button>
           <button class="btn rent-btn" style={{ color: "white" }}>Rent</button>
         </div>
         <center>
-          <div class="search-container">
-            <div class="dropdown-box">
-              <select>
-                <option>Nashik</option>
-                <option>Mumbai</option>
-                <option>Dhule</option>
-              </select>
-            </div>
 
-            <input type="text" className="q" placeholder="Search upto 3 localities or landmarks" style={{ width: 500 }} />
-            <Link to='/Search'>
-            <button class="search-btn">
-              <i class="search"></i><img src="	https://assets.nobroker.in/nb-new/public/Home/searchIcon.svg" width={20} /> Search
-            </button>
-            </Link>
-          </div>
+          <table  bgcolor="white" >
+            <tbody>
+              <tr>
+                <td>
+                  <div class="dropdown-box">
+                    <select>
+                      <option
+                      checked={selectedBHK === "Nashik"}
+                      onChange={() => handleSelect("Nashik")}>Nashik</option>
+                      <option>Dhule</option>
+                      <option>Mumbai</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <input type="text" className="q" placeholder="Search upto 3 localities or landmarks" style={{ width: 400 }} />
+                </td>
+                <td colspan='3'>
+                  <Link to='/Search'>
+                    <button class="search-btn">
+                      <i class="search"></i><img src="https://assets.nobroker.in/nb-new/public/Home/searchIcon.svg" width={20} height={20} /> Search
+                    </button>
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="dropdown-box1 ">
+                    <select>
+                      <option style={{ color: "gray" }}>Availability</option>
+                      <option>Immediate</option>
+                      <option>Within 15 days</option>
+                      <option>Within 30 days</option>
+                    </select>
+                  </div>
+                </td>
+
+                <td >
+                  &nbsp;&nbsp;
+                  <input className="a" type="radio" id="101" name="family" value="Full House" />&nbsp; Full House &nbsp;&nbsp;
+                  <input className="a" type="radio" id="102" name="family" value="Full House" />&nbsp;PG/Hostel &nbsp;&nbsp;
+                  <input className="a" type="radio" id="103" name="family" value="Full House" />&nbsp;Flatmates &nbsp;&nbsp;
+                  <input className="a" type="radio" id="103" name="family" value="Full House" />&nbsp;Rooms &nbsp;&nbsp;
+
+                </td>
+                <td>
+                  <div className="dropdown-box1 ">
+                    <select>
+                      <option >BHK Type</option>
+                      <option>1 RK</option>
+                      <option>1 BHK</option>
+                      <option>2 BHK</option>
+                      <option>3 BHK</option>
+                      <option>3+ BHK</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+          <Link to='/sell' className="ab1"> ------ Are you a Property Owner ? ------</Link>
+          
         </center>
-      </div>
-      {/* <Container className="hero-content position-absolute top-50 start-50 translate-middle text-center text-white px-3">
-        <h1 className="display-4 fw-bold mb-4">Find Your Future Dream Home</h1>
-        <div className="d-flex justify-content-center mb-3">
-          <button className="btn-hero me-2">Buy</button>
-          <button className="btn-outline-hero">Rent</button>
-        </div>
+      </div >
 
-        {/* Cities + Search Bar */}
-        {/* <Row className="align-items-center justify-content-center mt-3">
-
-          <Col xs="auto" className="d-flex flex-nowrap align-items-center gap-2 mt-2">
-            <select style={{ maxWidth: 150 }}>
-              <option>Nashik</option>
-              <option>Mumbai</option>
-              <option>Dhule</option>
-            </select>
-
-            <inputGroup className="glass-search d-flex align-items-center p-1 rounded">
-              <formControl style={{ maxWidth: 150 }} placeholder="Locality" />
-              <button variant="dark">🔍 Search</button>
-            </inputGroup>
-          </Col>
-        </Row>
-      </Container> */} 
       <div className="features-container">
         <div className="feature">
           <FaHome className="feature-icon" />
@@ -112,10 +142,10 @@ const FrontPage = () => {
         </div>
       </div>
 
-      <hr></hr>
+      <hr/>
       <footer className="bg-light text-dark pt-8 pb-2">
         <Container>
-          <Row>
+          <Row >
             <Col md={3}>
               <h6>Contact Information:</h6>
               <ul className="list-unstyled">
@@ -151,13 +181,13 @@ const FrontPage = () => {
               </ul>
             </Col>
           </Row>
-          <hr className="bg-light" />
-          <p className="text-center small">© 2025 Online House Rental System. All rights reserved.</p>
+          <hr className="bg-light my-3" />
+          <p className="text-center small">© 2025 nobroker. All rights reserved.</p>
         </Container>
         <div class='Footerp'>
 
         </div>
-        <Container>
+        {/* <Container>
           <Row className="text-center">
             <Col xs={12} md={6}>
               <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', marginRight: '20px', textDecoration: 'none' }}>
@@ -171,7 +201,7 @@ const FrontPage = () => {
             </Col>
           </Row>
 
-        </Container>
+        </Container> */}
       </footer>
 
     </>
