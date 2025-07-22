@@ -2,18 +2,16 @@
  import { BrowserRouter,Routes,Route } from "react-router-dom";
  import TopNavbar from "./Pages/TopNavbar";
 // import Demo from './Demo.js';
-import About from './About.js';
+import About from './Pages/About.js';
 import Owner from "./Pages/Owner.js";
 import Tenant from "./Pages/Tenant.js";
 import PropertyListing from "./Pages/PropertyListing.js";
 import FrontPage from "./Pages/FrontPage.js";
-import Test2 from "./Test2.js";
 import Home from "./Pages/Home.js";
 import Search from "./Pages/Search.js";
-import sell from './Pages/Selling.js';
 import Selling from "./Pages/Selling.js";
-import About  from "./About.js";
-import Feedback from "./Feedback.js"
+
+import Feedback from "./Pages/Feedback.js"
 
 
  function App() {
@@ -26,7 +24,6 @@ import Feedback from "./Feedback.js"
          <Routes>
              {/* <Route path='/Test2' element={<Test/>}/>}
           {/* <Route path='/Demo' element={<Demo/>*/}
-         <Route path='/About' element={<About/>}/>
           <Route path='/Owner' element={<Owner/>}/>
           <Route path='/Tenant' element={<Tenant/>}/>
           <Route path='/PropertyListing' element={<PropertyListing/>}/>
@@ -34,8 +31,8 @@ import Feedback from "./Feedback.js"
           <Route path='/Home' element={<Home/>}/>
           <Route path='/Search' element={<Search/>}/>
           <Route path='/sell' element={<Selling/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/feedback' element={<Feedback/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Feedback' element={<Feedback/>}/>
  
  
          </Routes>

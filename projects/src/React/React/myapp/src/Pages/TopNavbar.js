@@ -33,8 +33,8 @@ function TopNavbar() {
                 <li><Link to="/">Post Property</Link></li>
                 <li><Link to="/">Gallery</Link></li>
                 <li><Link to="/">History</Link></li>
-                <li><Link to="/">Feedback</Link></li>
-                <li><Link to="/">About Us</Link></li>
+                <li><Link to="/Feedback">Feedback</Link></li>
+                <li><Link to="/About">About Us</Link></li>
               </ul>
             </div>
           </div>

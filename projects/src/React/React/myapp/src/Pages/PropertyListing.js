@@ -20,7 +20,7 @@ function PropertyListing() {
       id: 1,
       title: "Luxury Villa",
       description: "Spacious villa with garden and pool.",
-      images: [Fhome,Shome,Thome,Fohome,Fihome,Sihome,Sehome,Ehome]
+      images: [Fhome, Shome, Thome, Fohome, Fihome, Sihome, Sehome, Ehome]
     },
     {
       id: 2,
@@ -70,24 +70,24 @@ function PropertyListing() {
   return (
     <div className="p-4">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-  <img 
-    src={PropImage}
-    alt="logo-left" 
-    style={{ width: '70px', height: '70px', marginRight: '10px' }}
-  />
-  <h1 style={{ 
-    color: 'black', 
-    fontFamily: 'Aries', 
-    fontWeight: 'bolder', 
-    textAlign: 'center' 
-  }}>
-   Houses Available </h1>
-  <img 
-    src={PropImage}
-    alt="logo-right" 
-    style={{ width: '70px', height: '70px', marginLeft: '10px' }}
-  />
-</div> 
+        <img
+          src={PropImage}
+          alt="logo-left"
+          style={{ width: '70px', height: '70px', marginRight: '10px' }}
+        />
+        <h1 style={{
+          color: 'black',
+          fontFamily: 'Aries',
+          fontWeight: 'bolder',
+          textAlign: 'center'
+        }}>
+          Houses Available </h1>
+        <img
+          src={PropImage}
+          alt="logo-right"
+          style={{ width: '70px', height: '70px', marginLeft: '10px' }}
+        />
+      </div>
       <Row xs={1} sm={2} md={3} lg={4} className="g-4">
         {properties.map((property) => (
           <Col key={property.id}>

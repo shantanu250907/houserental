@@ -1,12 +1,22 @@
-.body{
+.body {
     background-color: #F2F2F2;
 }
 
-.btn-check{
-    width:100px;
+.btn-check {
+    width: 100px;
 }
-.form-check-input:hover{
+
+.form-check-input:hover {
     outline: 1px solid black;
     cursor: pointer;
     transition: outline 0.1s ease;
 }
+
+.gg {
+    display: flex;
+}
+
+
+/* .c {
+   
+} */

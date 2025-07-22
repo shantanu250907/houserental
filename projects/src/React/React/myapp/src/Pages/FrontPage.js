@@ -15,10 +15,10 @@ import { Link } from "react-router-dom";
 
 const FrontPage = () => {
   const [selectedBHK, setSelectedBHK] = useState('');
-  
-      const handleSelect = (type) => {
-          setSelectedBHK(type);
-      };
+
+  const handleSelect = (type) => {
+    setSelectedBHK(type);
+  };
 
   return (
     <>
@@ -43,7 +43,7 @@ const FrontPage = () => {
         />
       </video>
       <div className="overlay">
-        <center><h1 style={{ fontFamily: 'Arrial', color: 'White', fontSize: '3.5rem',textShadow:'0 8px 8px black' }} className="ab">Find Your Future Dream Home</h1></center>
+        <center><h1 style={{ fontFamily: 'Arrial', color: 'White', fontSize: '3.5rem', textShadow: '0 8px 8px black' }} className="ab">Find Your Future Dream Home</h1></center>
         <br></br>
         <div class="action-buttons">
           <button class="btn buy-btn" style={{ color: "white" }}>Buy</button>
@@ -51,15 +51,16 @@ const FrontPage = () => {
         </div>
         <center>
 
-          <table  bgcolor="white" >
+          <table bgcolor="white" >
             <tbody>
               <tr>
                 <td>
                   <div class="dropdown-box">
                     <select>
+                      <option>Select City</option>
                       <option
-                      checked={selectedBHK === "Nashik"}
-                      onChange={() => handleSelect("Nashik")}>Nashik</option>
+                        checked={selectedBHK === "Nashik"}
+                        onChange={() => handleSelect("Nashik")}>Nashik</option>
                       <option>Dhule</option>
                       <option>Mumbai</option>
                     </select>
@@ -111,9 +112,9 @@ const FrontPage = () => {
               </tr>
             </tbody>
           </table>
-          <br/>
+          <br />
           <Link to='/sell' className="ab1"> ------ Are you a Property Owner ? ------</Link>
-          
+
         </center>
       </div >
 
@@ -142,7 +143,7 @@ const FrontPage = () => {
         </div>
       </div>
 
-      <hr/>
+      <hr />
       <footer className="bg-light text-dark pt-8 pb-2">
         <Container>
           <Row >

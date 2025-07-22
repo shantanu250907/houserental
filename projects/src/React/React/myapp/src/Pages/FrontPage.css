@@ -4,17 +4,19 @@
   text-align: center;
   padding: 30px 20px;
   background-color: #f8f8f8;
-  
+
 }
 
 .feature {
   max-width: 300px;
   padding: 20px;
 }
-.small{
+
+.small {
   padding-top: 5px;
   padding-bottom: 15px;
 }
+
 .feature-icon {
   font-size: 70px;
   border: 2px solid black;
@@ -102,21 +104,21 @@
   border: 1px solid #080808;
   width: 170px;
 }
-.ab
-{
+
+.ab {
   text-shadow: #080808;
   color: white;
 }
 
-.ab1
-{
+.ab1 {
   text-shadow: #080808;
   color: white;
   font-weight: lighter;
-  font-size: 25px;
-  text-decoration:none;
+  font-size: 23px;
+  text-decoration: none;
 }
-.dropdown-box1 select{
+
+.dropdown-box1 select {
   border: none;
   padding: 1px 20px;
   font-size: 16px;
@@ -129,7 +131,8 @@
   border: 1px solid #080808;
   width: 170PX;
 }
-.a{
+
+.a {
   background-color: white;
   border: 0px solid black;
 }
@@ -139,7 +142,8 @@
   border-radius: 4px;
   height: 60px;
 }
-.s{
+
+.s {
   border-radius: 4px;
 }
 
