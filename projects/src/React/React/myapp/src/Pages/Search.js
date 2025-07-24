@@ -1724,9 +1724,9 @@ const Search = () => {
             {
                 id: 4.5,
                 title:
-                    <label>2 BHK Flat, in Galaxy Park for Rent
+                    <label>3 BHK Flat, in Galaxy Park for Rent
                         <br />
-                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Galaxy Park, College Road, Near Cycling Track , Nashik</h6>
+                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Galaxypark Apartment, College Road, Near Cycling Track , Nashik</h6>
                     </label>,
                 images: [
                     "https://images.nobroker.in/images/8a9f914392aae2e00192ab0528f8042b/8a9f914392aae2e00192ab0528f8042b_51148_343942_large.jpg",
@@ -1776,7 +1776,7 @@ const Search = () => {
             {
                 id: 4.6,
                 title:
-                    <label>2 BHK Flat, in Mhadha Building for Rent
+                    <label>3 BHK Flat, in Mhadha Building for Rent
                         <br />
                         <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Mhadha Building, Makhmalabad Road, Near North-Point School Nashik</h6>
                     </label>,
@@ -1828,7 +1828,7 @@ const Search = () => {
             {
                 id: 4.7,
                 title:
-                    <label>2 BHK Flat, in Blue Meados for Rent
+                    <label>3 BHK Flat, in Blue Meados for Rent
                         <br />
                         <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Blue Meados, Pathardi Phata, Pathardi Road, Near Zudio, Nashik</h6>
                     </label>,
@@ -1880,7 +1880,7 @@ const Search = () => {
             {
                 id: 4.8,
                 title:
-                    <label>2 BHK Flat, in Prabhu City for Rent
+                    <label>3 BHK Flat, in Prabhu City for Rent
                         <br />
                         <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Prabhu City, Mumbai-Agra Road, Near Hari Om Dhaba, Nashik</h6>
                     </label>,
@@ -1932,9 +1932,9 @@ const Search = () => {
             {
                 id: 4.9,
                 title:
-                    <label>2 BHK Flat, in Sai Sudarshan Apartment for Rent
+                    <label>3 BHK Flat, in Sudarshan Apartment for Rent
                         <br />
-                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Sai Sudarshan, College Road, Near Vyankatesh Hotel, Nashik</h6>
+                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Sudarshan Apartment, College Road, Near Vinay Hotel, Nashik</h6>
                     </label>,
                 images: [
                     "https://images.nobroker.in/images/8a9fa9839573d068019574281f9818f7/8a9fa9839573d068019574281f9818f7_42474_136741_medium.jpg",
@@ -1985,9 +1985,9 @@ const Search = () => {
             {
                 id: 4.10,
                 title:
-                    <label>2 BHK Flat, in Dev Mohan Society for Rent
+                    <label>3 BHK Flat, in Dev Mohan Society for Rent
                         <br />
-                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Dev Mohan, Khode Mala, Near Bhamre Misal, Nashik</h6>
+                        <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Dev Mohan, Khode Mala, Near Bhamre Misal Hotel, Nashik</h6>
                     </label>,
                 images: [
                     "https://images.nobroker.in/images/8a9fb282788ee84001788f649975064f/8a9fb282788ee84001788f649975064f_44647_334007_large.jpg",
