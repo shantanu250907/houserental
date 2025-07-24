@@ -30,7 +30,7 @@ function TopNavbar() {
             <div className="dropdown">
               <button class="btn btn-outline-dark rounded-pill px-4" style={{ width: '85px', height: '40px' }}>Menu</button>
               <ul className="dropdown-menu small-menu">
-                <li><Link to="/">Post Property</Link></li>
+                <li><Link to="/sell">Post Property</Link></li>
                 <li><Link to="/">Gallery</Link></li>
                 <li><Link to="/">History</Link></li>
                 <li><Link to="/Feedback">Feedback</Link></li>
