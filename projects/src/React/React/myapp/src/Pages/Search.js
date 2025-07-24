@@ -15,7 +15,7 @@ const Search = () => {
             {
                 id: 1,
                 title:
-                    <label>1 RK Flat, In Sai Villa Apartment for Rent
+                    <label>1 RK Flat, In Sahil Villa Apartment for Rent
                         <br />
                         <h6 style={{ marginTop: '12px', color: 'grey', fontSize: '15px' }}>Sai Villa , Govind Nagar Near Prakash Petrol Pump, Nashik</h6>
                     </label>,
