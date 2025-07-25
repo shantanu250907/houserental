@@ -4,7 +4,7 @@ import "./Selling.css";
 const Selling = () => {
   return (
     <>
-      <div className='contanier'>
+      <div className='contanier' style={{marginTop:'130px',marginBottom:'3px'}}>
         <h className='a'>Sell or Rent your Property for Free</h>
         <h className='b'>Looking for a Property?<a href='/FrontPage' style={{ fontSize: '17px' }}>Click here!</a></h>
       </div>

@@ -14,81 +14,91 @@ function TopNavbar() {
 
   return (
     <>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }}>
-        <img src={broker} alt="logo-left" style={{ width: '250px', height: '70px', marginRight: '10px', marginLeft: '10px' }} />
-        <div className="H">
-          <div class="btn-group" role="group"></div>
-          <Nav.Link as={NavLink} to='/FrontPage'>
-            <Button variant="outline-secondary rounded-pill px-4" style={{ width: '90px', height: '40px' }}>Home</Button>
-          </Nav.Link>
-          <div class="btn-group" >
-            <Link to='/Owner'>
-              <button class="btn btn-success rounded-pill px-4" style={{ width: '95px', height: '40px' }}>Owner</button>
-            </Link>
-            <button class="btn btn-outline-danger rounded-pill px-4" style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)} style={{ width: '100px', height: '40px' }}>Log In</button>
-            <button class="btn btn-danger rounded-pill px-4" style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)} style={{ width: '110px', height: '40px' }} >Sign Up</button>
-            <div className="dropdown">
-              <button class="btn btn-outline-dark rounded-pill px-4" style={{ width: '85px', height: '40px' }}>Menu</button>
-              <ul className="dropdown-menu small-menu">
-                <li><Link to="/sell">Post Property</Link></li>
-                <li><Link to="/">Gallery</Link></li>
-                <li><Link to="/">History</Link></li>
-                <li><Link to="/Feedback">Feedback</Link></li>
-                <li><Link to="/About">About Us</Link></li>
-              </ul>
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 99,
+        backgroundColor: 'white',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)', 
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }}>
+          <img src={broker} alt="logo-left" style={{ width: '250px', height: '70px', marginRight: '10px', marginLeft: '10px' }} />
+          <div className="H">
+            <div class="btn-group" role="group"></div>
+            <Nav.Link as={NavLink} to='/FrontPage'>
+              <Button variant="outline-secondary rounded-pill px-4" style={{ width: '90px', height: '40px' }}>Home</Button>
+            </Nav.Link>
+            <div class="btn-group" >
+              <Link to='/Owner'>
+                <button class="btn btn-success rounded-pill px-4" style={{ width: '95px', height: '40px' }}>Owner</button>
+              </Link>
+              <button class="btn btn-outline-danger rounded-pill px-4" style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)} style={{ width: '100px', height: '40px' }}>Log In</button>
+              <button class="btn btn-danger rounded-pill px-4" style={{ cursor: 'pointer' }} onClick={() => setShowLogin(true)} style={{ width: '110px', height: '40px' }} >Sign Up</button>
+              <div className="dropdown">
+                <button class="btn btn-outline-dark rounded-pill px-4" style={{ width: '85px', height: '40px' }}>Menu</button>
+                <ul className="dropdown-menu small-menu">
+                  <li><Link to="/sell">Post Property</Link></li>
+                  <li><Link to="/">Gallery</Link></li>
+                  <li><Link to="/">History</Link></li>
+                  <li><Link to="/Feedback">Feedback</Link></li>
+                  <li><Link to="/About">About Us</Link></li>
+                </ul>
+              </div>
             </div>
           </div>
+
+
         </div>
 
+        {/* Bottom Navbar */}
+        <section>
 
-      </div>
+          <Navbar className="bg-body-tertiary x">
+            <Container>
 
-      {/* Bottom Navbar */}
-      <section>
-
-        <Navbar className="bg-body-tertiary x">
-          <Container>
-            
               <Nav className="me-auto ">
                 <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">HouseListing</Button>
-              </Nav.Link>
-              
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Tenant</Button>
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Home Detail Page</Button>
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Booking System</Button>
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Payment integration</Button>
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Dashboard</Button>
-              </Nav.Link>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Nav.Link as={NavLink} to='/about'>
-                <Button variant="secondary">Admin panel</Button>
-              </Nav.Link>
+                  <Button variant="secondary">HouseListing</Button>
+                </Nav.Link>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Tenant</Button>
+                </Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Home Detail Page</Button>
+                </Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Booking System</Button>
+                </Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Payment integration</Button>
+                </Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Dashboard</Button>
+                </Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Nav.Link as={NavLink} to='/about'>
+                  <Button variant="secondary">Admin panel</Button>
+                </Nav.Link>
               </Nav>
-            
-          </Container>
-        </Navbar>
 
-      </section>
+            </Container>
+          </Navbar>
 
-      {/* ✅ Login Modal Component */}
-      <LoginModal show={showLogin} handleClose={() => setShowLogin(false)} />
-    </>
-  );
+        </section>
+
+        {/* ✅ Login Modal Component */}
+        <LoginModal show={showLogin} handleClose={() => setShowLogin(false)} />
+      </div>
+      </>
+      );
 }
 
-export default TopNavbar;
+      export default TopNavbar;
